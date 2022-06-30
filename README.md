@@ -16,7 +16,7 @@ Example files are located in `gaussian3d.ipynb`. To run this:
 
 ### Method 1: Local
 
-You may clone this repo on your local machine by running 
+You may clone this repo on your local machine by running
 
 ```{conda}
 git clone https://github.com/ryanchankh/redunet_demo
