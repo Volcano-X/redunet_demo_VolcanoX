@@ -131,4 +131,3 @@ def load_ckpt(model_dir, name, net, eval_=True):
     if eval_:
         net.eval()
     return net
-

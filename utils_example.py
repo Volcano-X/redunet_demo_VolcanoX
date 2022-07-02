@@ -16,16 +16,16 @@ def generate_2d(data, noise, samples, shuffle=False):
     elif data == 6:
         centers = [(np.cos(3*np.pi/4), np.sin(3*np.pi/4)), (np.cos(4*np.pi/3), np.sin(4*np.pi/3)), (1 ,0)]
     elif data == 7:
-        centers = [(np.cos(3*np.pi/4), np.sin(3*np.pi/4)), 
-                   (np.cos(4*np.pi/3), np.sin(4*np.pi/3)), 
-                   (np.cos(np.pi/4), np.sin(np.pi/4))]
+        centers =  [(np.cos(3*np.pi/4), np.sin(3*np.pi/4)), 
+                    (np.cos(4*np.pi/3), np.sin(4*np.pi/3)), 
+                    (np.cos(np.pi/4), np.sin(np.pi/4))]
     elif data == 8:
-        centers = [(np.cos(np.pi/6), np.sin(np.pi/6)), 
-                   (np.cos(np.pi/2), np.sin(np.pi/2)), 
-                   (np.cos(3*np.pi/4), np.sin(3*np.pi/4)),
-                   (np.cos(5*np.pi/4), np.sin(5*np.pi/4)),
-                   (np.cos(7*np.pi/4), np.sin(7*np.pi/4)),
-                   (np.cos(3*np.pi/2), np.sin(3*np.pi/2))]
+        centers =  [(np.cos(np.pi/6), np.sin(np.pi/6)), 
+                    (np.cos(np.pi/2), np.sin(np.pi/2)), 
+                    (np.cos(3*np.pi/4), np.sin(3*np.pi/4)),
+                    (np.cos(5*np.pi/4), np.sin(5*np.pi/4)),
+                    (np.cos(7*np.pi/4), np.sin(7*np.pi/4)),
+                    (np.cos(3*np.pi/2), np.sin(3*np.pi/2))]
     else:
         raise NameError('data not found.')
 
@@ -50,17 +50,17 @@ def generate_2d(data, noise, samples, shuffle=False):
 
 def generate_3d(data, noise, samples, shuffle=False):
     if data == 1:
-        centers = [(1, 0, 0), 
-                   (0, 1, 0), 
-                   (0, 0, 1)]
+        centers =  [(1, 0, 0), 
+                    (0, 1, 0), 
+                    (0, 0, 1)]
     elif data == 2:
-        centers = [(np.cos(np.pi/4), np.sin(np.pi/4), 1),
-                   (np.cos(2*np.pi/3), np.sin(2*np.pi/3), 1),
-                   (np.cos(np.pi), np.sin(np.pi), 1)]
+        centers =  [(np.cos(np.pi/4), np.sin(np.pi/4), 1),
+                    (np.cos(2*np.pi/3), np.sin(2*np.pi/3), 1),
+                    (np.cos(np.pi), np.sin(np.pi), 1)]
     elif data == 3:
-        centers = [(np.cos(np.pi/4), np.sin(np.pi/4), 1),
-                   (np.cos(2*np.pi/3), np.sin(2*np.pi/3), 1),
-                   (np.cos(5*np.pi/6), np.cos(5*np.pi/6), 1)]
+        centers =  [(np.cos(np.pi/4), np.sin(np.pi/4), 1),
+                    (np.cos(2*np.pi/3), np.sin(2*np.pi/3), 1),
+                    (np.cos(5*np.pi/6), np.cos(5*np.pi/6), 1)]
     else:
         raise NameError('Data not found.')
 
@@ -117,8 +117,6 @@ def plot_3d(Z, y, title=''):
     plt.show()
     plt.close()
 
-
-
 def plot_loss_mcr(data):
     loss_total = data['loss_total']
     loss_expd = data['loss_expd']
@@ -137,3 +135,4 @@ def plot_loss_mcr(data):
     fig.tight_layout()
     plt.show()
     plt.close()
+    
